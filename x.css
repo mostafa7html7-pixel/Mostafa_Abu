@@ -1,60 +1,183 @@
-.v{
-    background: linear-gradient(to right,rgb(112, 11, 11),rgb(42, 23, 87));
-    border: none;
-    border-radius: 30px;
-    padding: 7px;
-    margin: 5px;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: whitesmoke;
-    font-style:normal;
-    text-align: center;}
-    .v:hover{
-        background: linear-gradient(to right,rgb(42, 23, 87),rgb(112, 11, 11));
-        color: white;
-        box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
-        transition: 0.1s;
-    }
- body{
-    background-color: rgb(0, 0, 0);
- }
- .f{
-    border: top;
-    border-radius:7cqmin;
-    padding: 0px; 
+.v {
+  background: linear-gradient(to right, rgb(112, 11, 11), rgb(42, 23, 87));
+  border: none;
+  border-radius: 30px;
+  padding: 7px;
+  margin: 5px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: whitesmoke;
+  font-style: normal;
+  text-align: center;
+}
+
+.v:hover {
+  background: linear-gradient(to right, rgb(42, 23, 87), rgb(112, 11, 11));
+  color: white;
+  box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24), 0 17px 50px 0 rgba(255, 0, 0, 0.19);
+  transition: 0.1s;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.f {
+  border: top;
+  border-radius: 7cqmin;
+  padding: 0px;
   padding-bottom: 0px;
 }
-.f:hover{
-    border: none;
-    padding: 0%;
-    border-radius: 40px;
-    box-shadow: 0 7px 21px rgb(187, 178, 178) , 0 17px 50px 0 rgb(216, 211, 211);
-    transition:0.50,s;
-      padding-bottom: 0%;
-        padding-right: 0%;
-          padding-left: 0%;
+
+.f:hover {
+  border: none;
+  padding: 0%;
+  border-radius: 40px;
+  box-shadow: 0 7px 21px rgb(187, 178, 178), 0 17px 50px 0 rgb(216, 211, 211);
+  transition: 0.50, s;
+  padding-bottom: 0%;
+  padding-right: 0%;
+  padding-left: 0%;
 }
-.q{ width: 200px;
-border: #000 2px solid;
-border-radius: 30px;
-border-style: double;
-border-color: rgb(112, 11, 11);
-background: linear-gradient(to right,rgb(78, 21, 21),rgb(0, 0, 0));
-color: whitesmoke;
-font-size: 20px;
-padding: 10px;
-text-align: center;
-align-items: center;
-padding-bottom: 3px;
+
+.q {
+
+  border: #000 2px solid;
+  border-radius: 30px;
+  border-style: double;
+  border-color: rgb(112, 11, 11);
+  background: linear-gradient(to right, rgb(78, 21, 21), rgb(0, 0, 0));
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 3px;
+
+  /* تحديد عرض ثابت لجميع الصور */
+  width: 300px;
+
+  /* تحديد ارتفاع ثابت لجميع الصور */
+  height: 200px;
+  /* الصورة نفسها */
+  display: flex;
+
+
+  /* 2. التحكم في الفراغات بين الصور (اختياري) */
+  gap: 15px;
+  /* يضيف مسافة 15 بكسل بين الصور */
+  /* جعل الصورة عنصر كتلة */
+  margin-left: auto;
+  /* هوامش يسار تلقائية */
+  margin-right: auto;
+  /* هوامش يمين تلقائية */
+  /* قم بتحديد عرض الصورة للتحكم بها */
+  /* كيفية معالجة الصورة عند اختلاف نسب الطول للعرض */
+  object-fit: cover;
+
 
 }
-.q:hover{
-   box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
-        transition: 0.01s;
+
+.q:hover {
+  box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24), 0 17px 50px 0 rgba(255, 0, 0, 0.19);
+  transition: 0.01s;
+
 }
-.q:hover{
-     box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
-        transition: 0.01s;
-          box-shadow: 0 7px 21px rgb(247, 0, 0) , 0 17px 50px 0 rgb(248, 1, 1);
-    transition:0.50,s;
+
+.q:hover {
+  box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24), 0 17px 50px 0 rgba(255, 0, 0, 0.19);
+  transition: 0.01s;
+  box-shadow: 0 7px 21px rgb(247, 0, 0), 0 17px 50px 0 rgb(248, 1, 1);
+  transition: 0.50, s;
 }
+
+.h {
+  width: 400px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0px;
+  padding: 0px;
+  align-items: center;
+  float: center;
+
+  /* الصورة نفسها */
+  display: block;
+  /* جعل الصورة عنصر كتلة */
+  margin-left: auto;
+  /* هوامش يسار تلقائية */
+  margin-right: auto;
+  /* هوامش يمين تلقائية */
+  /* قم بتحديد عرض الصورة للتحكم بها */
+  width: 30%;
+  max-width: 600px;
+  border: 12px solid #701521ef;
+  box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24), 0 17px 50px 0 rgba(255, 0, 0, 0.19);
+  transition: 0.01s;
+  border: none;
+  padding: 0%;
+  border-radius: 40px;
+  box-shadow: 0 7px 21px rgb(177, 30, 30), 0 17px 50px 0 rgb(185, 6, 6);
+  transition: 0.50, s;
+}
+
+.h:hover {
+  border: none;
+  padding: 0%;
+  border-radius: 40px;
+  box-shadow: 0 7px 21px rgb(177, 30, 30), 0 17px 50px 0 rgb(185, 6, 6);
+  transition: 0.50, s;
+}
+
+ 
+
+  /* gallery layout */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  /* منع الصور من التمركز تلقائياً داخل الـ gallery */
+  .gallery img {
+    margin: 0;
+    display: block;
+  }
+
+  /* صور البطاقات الصغيرة */
+  .gallery .q {
+    width: 300px;
+    /* ثابت أو غيّره حسب الرغبة */
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* صورة أكبر (لو أردت جعلها بنفس حجم الباقي غيّر القيم) */
+  .gallery .h {
+    width: 300px;
+    /* أو استخدم نسبة مثل 30% */
+    max-width: 320px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* تجاوب للشاشات الصغيرة */
+  @media (max-width: 600px) {
+
+    .gallery .q,
+    .gallery .h {
+      width: calc(50% - 12px);
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 380px) {
+
+    .gallery .q,
+    .gallery .h {
+      width: 100%;
+      height: auto;
+    }
+  }
