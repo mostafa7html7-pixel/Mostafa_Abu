@@ -538,3 +538,39 @@ html, body {
 @media (max-width: 420px) {
   .video-wrapper { border-width: 8px; }
 }
+/* ...existing code... */
+/* video: full-bleed, no side gaps, cover fit */
+html, body { margin: 0; padding: 0; width: 100%; box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+.video-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 10px solid #701521; /* عدّل اللون/السمك حسب الرغبة */
+  border-radius: 0;
+  background: #000;
+  /* ارتفاع نسبي: 16:9 افتراضياً */
+  height: calc(100vw * 9 / 16);
+}
+
+.video-wrapper .rkk {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;       /* يملأ الحاوية ويقص الزائد لتجنب الفراغين */
+  object-position: center;
+}
+
+/* إذا الفيديو عمودي وحابب يكون أعلى قليلاً على الموبايل: */
+@media (max-width: 600px) {
+  .video-wrapper { height: 60vh; } /* أو استخدم calc(100vw * 16/9) لتطويل الحاوية */
+}
+
+/* تقليل سمك الحدود على الشاشات الصغيرة */
+@media (max-width: 420px) {
+  .video-wrapper { border-width: 6px; }
+}
+/* ...existing code... */
