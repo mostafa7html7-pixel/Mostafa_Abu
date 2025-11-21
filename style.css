@@ -558,7 +558,7 @@ html, body { margin: 0; padding: 0; width: 100%; box-sizing: border-box; }
 
 .video-wrapper .rkk {
   width: 87%;
-  height: 100%;
+  height: 98%;
   display: block;
   object-fit: cover;       /* يملأ الحاوية ويقص الزائد لتجنب الفراغين */
   object-position: center;
@@ -570,7 +570,7 @@ html, body { margin: 0; padding: 0; width: 100%; box-sizing: border-box; }
 }
 
 /* تقليل سمك الحدود على الشاشات الصغيرة */
-@media (max-width: 420px) {
+@media (max-width: 390px) {
   .video-wrapper { border-width: 6px; }
 }
 /* ...existing code... */
