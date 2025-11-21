@@ -557,7 +557,7 @@ html, body { margin: 0; padding: 0; width: 100%; box-sizing: border-box; }
 }
 
 .video-wrapper .rkk {
-  width: 100%;
+  width: 87%;
   height: 100%;
   display: block;
   object-fit: cover;       /* يملأ الحاوية ويقص الزائد لتجنب الفراغين */
