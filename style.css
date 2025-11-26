@@ -4,171 +4,233 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
  }
- body{
-    background:linear-gradient(to right,rgba(39, 7, 26, 0.9),rgba(39, 7, 26, 0.801),rgba(39, 7, 26, 0.834),rgba(39, 7, 26, 0.834),rgba(39, 7, 26, 0.9));
+
+ body {
+    background: linear-gradient(to right, rgba(39, 7, 26, 0.9), rgba(39, 7, 26, 0.801), rgba(39, 7, 26, 0.834), rgba(39, 7, 26, 0.834), rgba(39, 7, 26, 0.9));
  }
 
-.container {
+ .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #690808;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
+    box-shadow: 0 5px 14px rgb(201, 35, 35), 0 6px 17px 0 rgb(204, 40, 40);
+    transition: 3.9, s;
+ }
 
-h1 {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+ .yyyyy {
+    color: #ffffff;
+    border-bottom: 4px solid #ff3c00;
     padding-bottom: 10px;
     margin-bottom: 30px;
+    border-radius: 30px;
     text-align: center;
-}
+    font-size: 40px;
+ }
 
-h2 {
-    color: #4CAF50;
+ h2 {
+    color: #00ff08;
     margin-top: 40px;
     text-align: center;
+    font-size: 30px;
     margin-bottom: 20px;
-}
+ }
 
-/* 2. تنسيق الصورة التفاعلية (الرابط النقطي) */
-.intro-section {
+ /* 2. تنسيق الصورة التفاعلية (الرابط النقطي) */
+ .intro-section {
     text-align: center;
     margin-bottom: 40px;
-}
+ }
 
-.intro-section a {
+ .intro-section a {
     display: block;
     text-decoration: none;
     color: inherit;
     transition: opacity 0.3s;
-}
+ }
 
-.intro-section img {
+ .intro-section img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
     display: block;
     margin: 0 auto 10px auto;
-}
+ }
 
-.intro-section p {
-    font-size: 1.1em;
-    color: #555;
+ .intro-section p {
+    font-size: 20px;
+    color: #ffffff;
     font-weight: bold;
-}
+    border: #000 7px solid;
+    border-style: double;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5px;
+    background: linear-gradient(to right, rgb(37, 5, 5), rgb(54, 9, 19));
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
 
-/* 3. تنسيق قائمة المحتوى باستخدام Flexbox */
-.content-list {
+ .intro-section p:hover {
+    box-shadow: 0 7px 21px rgb(177, 30, 30), 0 17px 50px 0 rgb(185, 6, 6);
+    transition: 0.50, s;
+ }
+
+ /* 3. تنسيق قائمة المحتوى باستخدام Flexbox */
+ .content-list {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-}
+ }
 
-.content-list li {
-    flex: 1 1 45%; /* كل عنصر يشغل حوالي 45% من العرض */
-    min-width: 280px; 
+ .content-list li {
+    flex: 1 1 45%;
+    /* كل عنصر يشغل حوالي 45% من العرض */
+    min-width: 280px;
     background-color: #e6f7ff;
-    border: 1px solid #b3e0ff;
+    border: 1px solid #ffb3b3;
     padding: 15px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
-}
+ }
 
-.content-list li:hover {
-    background-color: #cceeff;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
+ .content-list li:hover {
+    background-color: #ecb5c7;
+    transform: translateY(-13px);
+    box-shadow: 0 5px 10px rgba(189, 3, 3, 0.589);
+     
+ 
+     
+ 
+ }
 
-.content-list a {
+ .content-list a {
     text-decoration: none;
     color: #0056b3;
     font-weight: bold;
     display: block;
-    font-size: 1.1em;
-}
+    text-align: center;
+    font-size: 1.1rem;
+ }
 
-.content-list a strong {
-    color: #d9534f;
-    font-size: 0.9em;
+ .content-list a strong {
+    color: #f0150d;
+    font-size: 20px;
     display: block;
     margin-bottom: 5px;
-}
+    text-align: center;
+ }
 
-.content-list a span {
+ .content-list a span {
     display: block;
-    font-size: 0.9em;
-    color: #666;
+    font-size: 1.2em;
+    color: #ffffff;
     font-weight: normal;
     margin-top: 5px;
-}
+    text-align: center;
+    border: #000000 2px solid;
+    background-color: rgb(44, 42, 42);
+    border-radius: 10px;
+    padding: 19px;
+    box-shadow: 0 3px 4px rgb(177, 30, 30), 0 3px 5px 0 rgb(185, 6, 6);
+    transition: 3.9, s;
+ }
 
-/* 4. التجاوب مع أحجام الشاشات (Responsive Design) */
-@media (max-width: 650px) {
+ /* 4. التجاوب مع أحجام الشاشات (Responsive Design) */
+ @media (max-width: 650px) {
     body {
-        padding: 10px;
+       padding: 10px;
     }
+
     .container {
-        padding: 15px;
+       padding: 15px;
     }
+
     .content-list li {
-        flex: 1 1 100%; /* عرض عمود واحد على الموبايل */
-        min-width: unset;
+       flex: 1 1 100%;
+       /* عرض عمود واحد على الموبايل */
+       min-width: unset;
     }
+
     h1 {
-        font-size: 1.4em;
-    }}
-    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+       font-size: 1.4em;
+    }
+ }
+
+ /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   margin: 1rem auto;
+    margin: 1rem auto;
     max-width: 1200px;
- padding: 0 0.5rem;
+    padding: 0 0.5rem;
  }
-/* علشان نبعدهم عن بعض */
- .navigation ul{
+
+ /* علشان نبعدهم عن بعض */
+ .navigation ul {
     display: flex;
     list-style-type: none;
     gap: 2rem;
  }
-/* علشان نحوش النقط من عناصر القائمة ونخليها جنب بعض */
- .navigation a{
+
+ /* علشان نحوش النقط من عناصر القائمة ونخليها جنب بعض */
+ .navigation a {
     text-decoration: none;
     color: antiquewhite;
  }
- .ss{
+
+ .ss {
     width: 80px;
     height: 80px;
     border-radius: 50%;
  }
 
-/*علشان تغير اللون لما تقرب الماوس من التلت صفحات الفوق فى الصفحة */
- .navigation a:hover{
+ /*علشان تغير اللون لما تقرب الماوس من التلت صفحات الفوق فى الصفحة */
+ .navigation a:hover {
     text-decoration: none;
     color: rgb(255, 51, 0);
  }
 
- hr{
+ hr {
     opacity: 70%;
  }
 
  .hero {
- 
+
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:  5rem auto;
+    margin: 5px auto;
     max-width: 1200px;
+    margin-top: 17px;
 
  }
+ .separator-line {
+  /* 1. تحديد الارتفاع (وهو سمك الخط) */
+  height: 2px;
+  
+  /* 2. تحديد اللون */
+  background: linear-gradient(to right,rgba(189, 0, 0, 0.801),rgba(39, 7, 26, 0.767)); /* لون أزرق جذاب */
+  
+  /* 3. تحديد العرض (هنا 80% من عرض الحاوية) */
+  width: 80%;
+  
+  /* 4. لتوسيط الخط في الصفحة (مهم) */
+  margin: 20px auto;
+  margin-top: 37px; 
+  margin-bottom: 0%;
+  /* 5. إعطاء زوايا مستديرة بسيطة (اختياري) */
+  border-radius: 23px;
+}
  
  .arrow {
     position: absolute;
@@ -182,18 +244,26 @@ h2 {
 
 
  }
+
  /* __________________________________________________________________________________________________________________________ */
 
-/* __________________________________________________________________________________________________________________________________________________ */
+ /* __________________________________________________________________________________________________________________________________________________ */
  .name {
     font-size: 3rem;
     color: azure;
  }
 
- .title{
-    font-size: 4rem;
-    color: rgb(216, 38, 97);
+ .title {
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
     size: 20px;
+     border-bottom: 5px solid #ff002b;
+    padding-bottom: 10px;
+    padding: 9px;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif monospace;
+    border-radius: 16px;
+    background: linear-gradient(to top,rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgba(255, 255, 255, 0));
  }
 
  .heroBtns {
@@ -207,7 +277,7 @@ h2 {
     color: aliceblue;
     border-radius: 24px;
     text-decoration: none;
-    padding:  0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     text-shadow: 0px 4px 4px #000;
  }
 
@@ -222,355 +292,426 @@ h2 {
     align-items: center;
     gap: 0.5rem;
     backdrop-filter: blur(4px);
+    margin-bottom: 0%;
  }
+
  .aboutMe {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 5rem auto;
-   max-width: 1200px;
-   gap: 10rem;
- }
- .textContainer {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+ padding: 0%;
+ margin-top: 0%;
+margin-bottom: 1%;   
 }
+
+ .textContainer {
+    display: flex;
+    flex-direction: column;
+ }
 
  .textTitle {
-   display: flex;
-   align-items: center;
-   gap: 5px;
-   font-size: 2rem;
-
- }
- .aboutName {
-   color: #000000;
- }
-.aboutTitle {
-   color: rgb(0, 0, 0);
-}
-.aboutMePar {
-   text-align: justify;
-   color: rgba(0, 0, 0, 0.881);
-  font-size: 22px;
-  border: #000 1px solid;
-  border-radius: 30px;
-  background-color: #a3a3a3ea;
-  padding: 15px;
-}
-
-.works {
-   background-color: #8f8e8ea8;
-   padding: 10rem 10rem;
-   margin: 5rem 0rem;
-  border: #000000ec 14px solid;
-  border-radius: 5%;
-}
- 
-.worksContainer{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: left;
-   margin: 5rem auto;
-   max-width: 1200px;
-}
-.projectTitle {
-   display: flex;
+    display: flex;
     align-items: center;
-   justify-content: left;
-   gap: 5px;
-   font-size: 1.1rem;
-}
-.works ul {
-   display: flex;
-   list-style-type: none;
-   align-items: center;
-   justify-content: space-between;
-   margin: 1%;
-   flex-wrap:wrap;
-   gap: 5px;
-}
-.works li {
-   border-radius: 16px;
-   background-color: rgba(57,62,70,0.5);
-   backdrop-filter: blur(4px);
-   padding: 1rem 4rem;
+    gap: 5px;
+    font-size: 2rem;
+
+ }
+
+ .aboutName {
+    color: #000000;
+ }
+
+ .aboutTitle {
+    color: rgb(0, 0, 0);
+ }
+
+ .aboutMePar {
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.881);
+    font-size: 22px;
+    border: #000 1px solid;
+    border-radius: 30px;
+    background-color: #a3a3a3ea;
+    padding: 15px;
+ }
+
+ .works {
+    background-color: #8f8e8ea8;
+    padding: 0rem 0rem;
+    margin: 5rem 0rem;
+    border: #000000ec 14px solid;
+    border-radius: 5%;
+    margin-left: 15px;
+ }
+
+ .worksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin: 5rem auto;
+    max-width: 1200px;
+    padding: 0%;
+ }
+
+ .projectTitle {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    font-size: 1.1rem;
+    padding: 3%;
+ }
+
+ .works ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
     margin: 1%;
-}
+    flex-wrap: wrap;
+    gap: 5px;
+ }
 
-.works li img {
-   width: 200px;
-   height: 200px;
-   object-fit: contain;
-   transition: transform 0.2s;
-   border: #000 2px solid;
-   border-radius: 10%;
-}
+ .works li {
+    border-radius: 16px;
+    background-color: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem 4rem;
+    margin: 1%;
+ }
 
-.works li :hover {
-   transform: scale(1.4);
-}
-.r{
-   width: 50pxpx;
-}
-.y{
-   width: 50px;
-}
-.u{  width: 50px;}
-.i{
-     width: 45px;
-}
-.o{
-   width: 50px;
-}
-.rr{
-   width: 56px;
-}
-.contactContainer{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-around;
-   gap: 2rem;
-   margin: 2rem;
-   max-width: 1200px;
-}
-.contactTitle{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 5px;
-   margin-bottom: 9px;
-   font-size: 2rem;
-}
-.contact {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-right: 5rem;
-   gap: 20rem;
-}
-.contact h3, .contact a{
-   color: antiquewhite;
-   text-decoration: none;
-}
+ .works li img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.2s;
+    border: #000 2px solid;
+    border-radius: 10%;
+ }
 
-.emailAndPhone {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 5px;
-}
-.socialMedia {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 3rem; 
-}
-.socialMedia a img{
-   width: 34px;
-   height: 34px;
-}
-.socialMedia a img:hover {
-   transform: scale(1.6);
-}
-.socialMedia a{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 50px;
-   background-color: #00000086;
-   backdrop-filter: blur(4px);
-   padding: 1rem;
-   margin: 
-   1rem;
-}
-footer{
+ .works li :hover {
+    transform: scale(1.4);
+ }
 
-   text-align: center;
-   padding: 2rem;
-   color: white;
-}
-@media (max-width: 1023px) {
-   header{
-      margin-left: 1rem;
-      margin-right: 1rem;
-   }
-   .hero {
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-   }
-   .heroImg {
-      width: 400px;
-   }
-   .name, .title {
-      font-size: 2rem;
-   }
-   .arrow{
-      display: none;
-   }
-   .aboutMe {
-      flex-direction: column;
-      gap: 2rem;
-      align-items: center;
-   }
-   .textContainer {
-      align-items: center;
-      margin: 0rem 5rem;
-      gap: 1rem;
-   }
-   .aboutName, .aboutTitle {
-      font-size: 1rem;
-   }
-   .light {
-      width: 60px;
-   }
-   .aboutMeImg {
-      width: 400px;
-   }
-   .works{
-      padding: 0%;
-   }
-   .worksContainer{
-      padding: 5rem 0rem;
-      gap: 3rem;
-      border-radius: 30px;
-   }
-   .projectTitle {
-      margin-left: 1rem;
-   }
-   .works ul {
-      flex-direction: column;
-      gap: 1rem;
-   }
-   .contactContainer {
-      margin: 10rem 5rem;
-      gap: 2rem;
-   }
-   .contact {
-      flex-direction: column;
-      gap: 1rem;
-      margin-right: 0rem;
-   }
-     /* changed code */
-   .socialMedia {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr)); /* صفين */
-      gap: 1rem;
-      align-items: center;
-      justify-items: center;
-      width: 100%;
-      max-width: 420px; /* اختياري لتحديد عرض المحتوى */
-      margin: 0 auto;
-   }
+ .r {
+    width: 50pxpx;
+ }
 
-   .socialMedia a {
-      width: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-}
-.rtyr{
-   font-size: 30px;
-   color: white;
-   text-align: center;
-   border: none;
-   border-radius: 20px;
-   padding: 16px;
-   margin: 13px;
-   background-color: #000000;
-   width: auto;
-   text-decoration: none;
-   border-width: 0cap;
-   }
-.rtyr:hover{
-    box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
-        transition: 0.01s;
+ .y {
+    width: 50px;
+ }
+
+ .u {
+    width: 50px;
+ }
+
+ .i {
+    width: 45px;
+ }
+
+ .o {
+    width: 50px;
+ }
+
+ .rr {
+    width: 56px;
+ }
+
+ .contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem;
+    max-width: 1200px;
+ }
+
+ .contactTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 9px;
+    font-size: 2rem;
+ }
+
+ .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap: 20rem;
+ }
+
+ .contact h3,
+ .contact a {
+    color: antiquewhite;
+    text-decoration: none;
+ }
+
+ .emailAndPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+ }
+
+ .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+ }
+
+ .socialMedia a img {
+    width: 34px;
+    height: 34px;
+ }
+
+ .socialMedia a img:hover {
+    transform: scale(1.6);
+ }
+
+ .socialMedia a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #00000086;
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    margin:
+       1rem;
+ }
+
+ footer {
+
+    text-align: center;
+    padding: 2rem;
+    color: white;
+ }
+
+ @media (max-width: 1023px) {
+    header {
+       margin-left: 1rem;
+       margin-right: 1rem;
+    }
+
+    .hero {
+       flex-direction: column;
+       align-items: center;
+       gap: 2rem;
+    }
+
+    .heroImg {
+       width: 400px;
+    }
+
+    .name,
+    .title {
+       font-size: 2rem;
+    }
+
+    .arrow {
+       display: none;
+    }
+
+    .aboutMe {
+       flex-direction: column;
+       gap: 2rem;
+       align-items: center;
+    }
+
+    .textContainer {
+       align-items: center;
+       margin: 0rem 5rem;
+       gap: 1rem;
+    }
+
+    .aboutName,
+    .aboutTitle {
+       font-size: 1rem;
+    }
+
+    .light {
+       width: 60px;
+    }
+
+    .aboutMeImg {
+       width: 400px;
+    }
+
+    .works {
+       padding: 0%;
+    }
+
+    .worksContainer {
+       padding: 5rem 0rem;
+       gap: 3rem;
+       border-radius: 30px;
+    }
+
+    .projectTitle {
+       margin-left: 1rem;
+    }
+
+    .works ul {
+       flex-direction: column;
+       gap: 1rem;
+    }
+
+    .contactContainer {
+       margin: 10rem 5rem;
+       gap: 2rem;
+    }
+
+    .contact {
+       flex-direction: column;
+       gap: 1rem;
+       margin-right: 0rem;
+    }
+
+    /* changed code */
+    .socialMedia {
+       display: grid;
+       grid-template-columns: repeat(2, minmax(0, 1fr));
+       /* صفين */
+       gap: 1rem;
+       align-items: center;
+       justify-items: center;
+       width: 100%;
+       max-width: 420px;
+       /* اختياري لتحديد عرض المحتوى */
+       margin: 0 auto;
+    }
+
+    .socialMedia a {
+       width: 90%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+ }
+
+ .rtyr {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 16px;
+    margin: 13px;
+    background-color: #000000;
+    width: auto;
+    text-decoration: none;
+    border-width: 0cap;
+ }
+
+ .rtyr:hover {
+    box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24), 0 17px 50px 0 rgba(255, 0, 0, 0.19);
+    transition: 0.01s;
     padding-left: 0%;
 
-}
-.rkk{
-  display: block;
-  margin-left: 49px;
-  margin-right: auto;
-  width: 440px;
-  height: 365px;
+ }
+
+ .rkk {
+    display: block;
+    margin-left: 49px;
+    margin-right: auto;
+    margin-bottom: 0%;
+    width: 440px;
+    height: 365px;
     border: none;
-  padding: 0%;
-  border-radius: 30px;
-  box-shadow: 0 7px 21px rgb(177, 30, 30), 0 17px 50px 0 rgb(185, 6, 6);
-  transition: 0.50, s;}
-  /* ____________________________________________________________________________________ */
-  /* إزالة الفراغات الجانبية العامة */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-*, *::before, *::after { box-sizing: inherit; }
+    padding: 0%;
+    border-radius: 30px;
+    box-shadow: 0 7px 21px rgb(177, 30, 30), 0 17px 50px 0 rgb(185, 6, 6);
+    transition: 0.50, s;
+ }
 
-/* حاوية الفيديو تملأ العرض بدون فراغات وتمنع ظهور المحتوى خارج الإطار */
-.video-wrapper {
-  width: 50%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  
+ /* ____________________________________________________________________________________ */
+ /* إزالة الفراغات الجانبية العامة */
+ html,
+ body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    box-sizing: border-box;
+ }
 
-  /* اختر أحد الأسطر التالية حسب كيف تريد عرض الفيديو: */
-  height: calc(100vw * 9 / 16); /* خيار افتراضي: ارتفاع يعتمد على عرض الشاشة (16:9) */
-   height: 60vh;         /* بديل: يشغل نسبة من ارتفاع الشاشة */
-}
-
-/* يجعل الفيديو يملأ الحاوية ويقص ما يتجاوز لتفادي الفراغين الجانبيين */
-.video-wrapper .rkk {
-  width: 86%;
-  height: 100%;
-  display: block;
-  object-fit: cover;        /* يملأ الحاوية ويقص الزائد */
-  object-position: center;  /* ضبّط مركز القص */
-}
-
-/* خفض سمك الحدود على شاشات صغيرة */
-@media (max-width: 320px) {
-  .video-wrapper { border-width: 8px; }
-}
-/* ...existing code... */
-/* video: full-bleed, no side gaps, cover fit */
-html, body { margin: 0; padding: 0; width: 99%; box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
-
-.video-wrapper {
-  width: 90%;
-  max-width: 90%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+ *,
+ *::before,
+ *::after {
+    box-sizing: inherit;
+ }
  
-  /* ارتفاع نسبي: 16:9 افتراضياً */
-  height: calc(100vw * 6 / 17);
-}
+ 
 
-.video-wrapper .rkk {
-  width: 78%;
-  margin-left: 17%;
-  height: 99%;
-  display: block;
-     /* يملأ الحاوية ويقص الزائد لتجنب الفراغين */
-  object-position: center;
-}
+ /* يجعل الفيديو يملأ الحاوية ويقص ما يتجاوز لتفادي الفراغين الجانبيين */
+ .video-wrapper .rkk {
+ 
+    display: block;
+    object-fit: cover;
+    /* يملأ الحاوية ويقص الزائد */
+    object-position: center;
+    /* ضبّط مركز القص */
+ }
 
-/* إذا الفيديو عمودي وحابب يكون أعلى قليلاً على الموبايل: */
-@media (max-width: 600px) {
-  .video-wrapper { height: 60vh; } /* أو استخدم calc(100vw * 16/9) لتطويل الحاوية */
-}
+ /* خفض سمك الحدود على شاشات صغيرة */
+ @media (max-width: 320px) {
+    .video-wrapper {
+       border-width: 8px;
+    }
+ }
 
-/* تقليل سمك الحدود على الشاشات الصغيرة */
-@media (max-width: 390px) {
-  .video-wrapper { border-width: 6px; }
-}
-/* ...existing code... */
+ /* ...existing code... */
+ /* video: full-bleed, no side gaps, cover fit */
+ html,
+ body {
+    margin: 0%;
+    padding: 0%;
+    width: 99%;
+    box-sizing: border-box;
+ }
+
+ .video-wrapper {
+    width: 90%;
+    max-width: 90%;
+    margin: 0%;
+    padding: 0%;
+ 
+
+    /* ارتفاع نسبي: 16:9 افتراضياً */
+    height: calc(100vw * 6 / 17);
+ }
+
+ .video-wrapper .rkk {
+    width: 78%;
+    margin-left: 17%;
+    height: 99%;
+    display: block;
+    /* يملأ الحاوية ويقص الزائد لتجنب الفراغين */
+    object-position: center;
+ }
+
+ /* إذا الفيديو عمودي وحابب يكون أعلى قليلاً على الموبايل: */
+ @media (max-width: 600px) {
+    .video-wrapper {
+       height: 60vh;
+    }
+
+    /* أو استخدم calc(100vw * 16/9) لتطويل الحاوية */
+ }
+
+ /* تقليل سمك الحدود على الشاشات الصغيرة */
+ @media (max-width: 390px) {
+    .video-wrapper {
+       border-width: 6px;
+    }
+ }
+
+ /* ...existing code... */
