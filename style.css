@@ -203,7 +203,15 @@
  hr {
     opacity: 70%;
  }
-
+.MMOOSSAA{
+   margin-left: 3%;
+   margin-top: 1%;
+   border: none;
+   padding: 2px;
+   border-radius: 30px;
+background: linear-gradient(to bottom,rgba(0, 0, 0, 0.274),rgba(0, 0, 0, 0.349));
+padding-left: 12px;
+}
  .hero {
 
     display: flex;
@@ -212,8 +220,16 @@
     margin: 5px auto;
     max-width: 1200px;
     margin-top: 17px;
-
  }
+ .separatorline{
+   height: 2px;
+   background: linear-gradient(to right,rgba(255, 0, 0, 0.801),rgba(255, 0, 0, 0.767)); /* لون أزرق جذاب */
+ width: 80%;
+  border-radius: 23px;
+margin: 0px;
+margin-top: 0%;
+ margin-left: 5%;
+}
  .separator-line {
   /* 1. تحديد الارتفاع (وهو سمك الخط) */
   height: 2px;
@@ -251,13 +267,20 @@
  .name {
     font-size: 3rem;
     color: azure;
+    border-top: #e60505 8px solid;
+      padding-top: 10px;
+       padding: 9px;
+    padding-right: 0%;
+    padding-left: 0%;
+        border-radius: 16px;
+        margin-bottom: 0%;
  }
 
  .title {
     font-size: 1.7rem;
     color: rgb(255, 0, 0);
     size: 20px;
-     border-bottom: 8px solid #131212;
+     border-bottom: 8px solid #ffffff;
     padding-bottom: 10px;
     padding: 9px;
     padding-right: 0%;
