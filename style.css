@@ -255,15 +255,17 @@
 
  .title {
     font-size: 1.7rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
     size: 20px;
-     border-bottom: 5px solid #ff002b;
+     border-bottom: 8px solid #131212;
     padding-bottom: 10px;
     padding: 9px;
+    padding-right: 0%;
+    padding-left: 0%;
     font-style: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif monospace;
     border-radius: 16px;
-    background: linear-gradient(to top,rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    
  }
 
  .heroBtns {
