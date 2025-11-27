@@ -365,6 +365,7 @@ margin-bottom: 1%;
  .textContainer {
     display: flex;
     flex-direction: column;
+    
  }
 
  .textTitle {
@@ -396,19 +397,26 @@ margin-bottom: 1%;
 
  .aboutMePar {
     text-align: justify;
-    color: rgba(0, 0, 0, 0.881);
-    font-size: 26px;
+    color: rgba(255, 255, 255, 0.881);
+    font-size: 29px;
     font-style: normal;
     font-size: bold;
     border: none;
       border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 14px rgb(110, 22, 22), 0 6px 17px 0 rgb(143, 26, 26);
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
+    box-shadow: 0 5px 14px rgb(255, 255, 255), 0 6px 17px 0 rgb(255, 0, 0);
     transition: 3.9, s;
-        background: linear-gradient(to right,  #8d0c0c,  #940c0c);
+        background: linear-gradient(to right,  #b91212ce,  #aa0e0ecc);
 padding: 16px;
-margin-bottom: 36px;
-margin-left: 0%;
+margin-bottom: 15px;
+margin-left: -30%;
+margin-top: 5px;
+margin-right:  25%;
+padding-bottom: 69px;
+padding-top: 20px;
+width: 656px;
+height: 200px;
+
  }
 
  .works {
