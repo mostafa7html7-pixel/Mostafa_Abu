@@ -260,7 +260,26 @@ margin-top: 0%;
 
 
  }
+ .navigation ul li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+       color: rgb(0, 0, 0);
+    border:none;
+    background: linear-gradient(to right,rgba(228, 6, 6, 0.747), rgba(189, 3, 3, 0.753));
+    border-radius: 7px;
+    transition: color 0.3s, text-decoration 0.3s;
+    padding: 5px;
+    margin: 0px;
 
+ }
+.navigation ul li a:hover {
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.733));
+color: rgb(228, 228, 228);
+    text-decoration: underline;
+    box-shadow: 0 7px 21px rgb(65, 2, 2), 0 17px 50px 0 rgb(121, 4, 19);
+    transition: 0.50, s;
+ }
  /* __________________________________________________________________________________________________________________________ */
 
  /* __________________________________________________________________________________________________________________________________________________ */
@@ -331,7 +350,18 @@ margin-top: 0%;
  margin-top: 0%;
 margin-bottom: 1%;   
 }
+.aboutMEImg {
+    border-radius: 30px;
+    margin-left: 67px;
+    margin-right: 0%;
 
+ }
+ 
+  .light {
+    width: 75px;
+    margin: 0%;
+
+ }
  .textContainer {
     display: flex;
     flex-direction: column;
@@ -341,26 +371,44 @@ margin-bottom: 1%;
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 2rem;
-
+    font-size:  1,5rem;
+    border-bottom: #410000 8px solid;
+    border-bottom-right-radius: 20px;
+    border-top: #420000 8px solid;
+    border-top-left-radius: 20px;
+  padding: 0%;
+  background: linear-gradient(to right,rgb(80, 0, 0),rgb(104, 0, 0),rgb(110, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0));
+ border-width: none;
+ 
+ width: 210px;
  }
 
+
  .aboutName {
-    color: #000000;
+    color: #cac2c2;
+    padding-left: 5px;
  }
 
  .aboutTitle {
-    color: rgb(0, 0, 0);
+    color: rgb(196, 182, 182);
+   
  }
 
  .aboutMePar {
     text-align: justify;
     color: rgba(0, 0, 0, 0.881);
-    font-size: 22px;
-    border: #000 1px solid;
-    border-radius: 30px;
-    background-color: #a3a3a3ea;
-    padding: 15px;
+    font-size: 26px;
+    font-style: normal;
+    font-size: bold;
+    border: none;
+      border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 14px rgb(110, 22, 22), 0 6px 17px 0 rgb(143, 26, 26);
+    transition: 3.9, s;
+        background: linear-gradient(to right,  #8d0c0c,  #940c0c);
+padding: 16px;
+margin-bottom: 36px;
+margin-left: 0%;
  }
 
  .works {
