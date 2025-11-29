@@ -6,7 +6,7 @@
  }
 
  body {
-    background: linear-gradient(to right, rgba(39, 7, 26, 0.9), rgba(39, 7, 26, 0.801), rgba(39, 7, 26, 0.834), rgba(39, 7, 26, 0.834), rgba(39, 7, 26, 0.9));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
  }
 
  .container {
@@ -163,14 +163,24 @@
     h1 {
        font-size: 1.4em;
     }
+     .navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
  }
-
+ .ss{
+      width: 20px;
+      height: 60px;
+ }
+ }
+ 
+ 
  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem auto;
+    margin: 2px auto;
     max-width: 1200px;
     padding: 0 0.5rem;
  }
@@ -194,11 +204,7 @@
     border-radius: 50%;
  }
 
- /*علشان تغير اللون لما تقرب الماوس من التلت صفحات الفوق فى الصفحة */
- .navigation a:hover {
-    text-decoration: none;
-    color: rgb(255, 51, 0);
- }
+ 
 
  hr {
     opacity: 70%;
@@ -258,28 +264,25 @@ margin-top: 0%;
     flex-direction: column;
     gap: 0.5rem;
 
-
+ 
  }
  .navigation ul li a {
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: bold;
-    
        color: rgb(0, 0, 0);
-    border:none;
-    background: linear-gradient(to right,rgba(228, 6, 6, 0.747), rgba(189, 3, 3, 0.753));
-    border-radius: 7px;
-    transition: color 0.3s, text-decoration 0.3s;
-    padding: 5px;
-    margin: 0px;
-
+    border-radius: 1px;
+      background-color: #ff0000;
+    padding: 2px;
+    border-radius: 5px;
  }
-.navigation ul li a:hover {
-        background: linear-gradient(to right,rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.733));
-color: rgb(228, 228, 228);
-    text-decoration: underline;
-    box-shadow: 0 7px 21px rgb(65, 2, 2), 0 17px 50px 0 rgb(121, 4, 19);
-    transition: 0.50, s;
- }
+ 
+  
+.navigation ul li .fgh{
+   margin-left: 12px;
+}
+ 
+ 
+ 
  /* __________________________________________________________________________________________________________________________ */
 
  /* __________________________________________________________________________________________________________________________________________________ */
@@ -322,21 +325,23 @@ color: rgb(228, 228, 228);
     border-radius: 24px;
     text-decoration: none;
     padding: 0.5rem 1.5rem;
-    text-shadow: 0px 4px 4px #000;
+    text-shadow: 0px 4px 4px #471d1d;
  }
 
  .CV {
-    background-color: #e70940;
+    background-color: #721818;
     color: aliceblue;
-    border-radius: 24px;
+    border-radius: 5px;
     text-decoration: none;
-    padding: 0.5rem 1.5rem;
+     padding: 9px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     gap: 0.5rem;
     backdrop-filter: blur(4px);
     margin-bottom: 0%;
+    margin-left: 19px;
+ 
  }
 
  .aboutMe {
@@ -472,6 +477,7 @@ height: 200px;
     transition: transform 0.2s;
     border: #000 2px solid;
     border-radius: 10%;
+    
  }
 
  .works li :hover {
@@ -528,13 +534,21 @@ height: 200px;
     margin-right: 5rem;
     gap: 20rem;
  }
-
+ 
  .contact h3,
  .contact a {
     color: antiquewhite;
     text-decoration: none;
  }
-
+.ssddg{
+   border: #000 2px solid;
+   padding: 1px;
+   background-color: #d40000;
+   border-radius: 10px;
+    box-shadow: 0 7px 21px rgb(61, 26, 26), 0 17px 50px 0 rgb(185, 6, 6);
+   
+    margin-right: 3px;
+}
  .emailAndPhone {
     display: flex;
     align-items: center;
@@ -569,9 +583,14 @@ height: 200px;
     margin:
        1rem;
  }
+.flex-container{
+    display: flex; /* يجعل العناصر بداخلها تترتب بشكل أفقي */
+    gap: 20px; /* مسافة بين العناصر (البوردرز) */
+    padding: 10px;
+   
+}
 
  footer {
-
     text-align: center;
     padding: 2rem;
     color: white;
@@ -582,7 +601,15 @@ height: 200px;
        margin-left: 1rem;
        margin-right: 1rem;
     }
-
+.ssddg{
+   border: #000 2px solid;
+   padding: 1px;
+   background-color: #d40000;
+   border-radius: 10px;
+    box-shadow: 0 7px 21px rgb(61, 26, 26), 0 17px 50px 0 rgb(185, 6, 6);
+   
+    margin-right: 3px;
+}
     .hero {
        flex-direction: column;
        align-items: center;
@@ -592,11 +619,20 @@ height: 200px;
     .heroImg {
        width: 400px;
     }
-
+#border-box{
+display: inline-block; /* المفتاح: يجعل الصندوق يظهر بجانب غيره */
+    width: 150px;
+    height: 70px;
+  
+    padding: 15px;
+    text-align: center;
+    margin-right: 20px; }/* مسافة بين البوردرز *
+}
     .name,
     .title {
        font-size: 2rem;
     }
+ 
 
     .arrow {
        display: none;
@@ -747,6 +783,7 @@ height: 200px;
     .video-wrapper {
        border-width: 8px;
     }
+   
  }
 
  /* ...existing code... */
@@ -772,7 +809,7 @@ height: 200px;
 
  .video-wrapper .rkk {
     width: 78%;
-    margin-left: 17%;
+    margin-left: 15%;
     height: 99%;
     display: block;
     /* يملأ الحاوية ويقص الزائد لتجنب الفراغين */
@@ -784,15 +821,38 @@ height: 200px;
     .video-wrapper {
        height: 60vh;
     }
-
+.video-wrapper .rkk{
+          width: 321px;
+          margin-left: 13px;
+          margin-right: 30px;
+       }
+       .heroBtns{
+       
+       }
+  
     /* أو استخدم calc(100vw * 16/9) لتطويل الحاوية */
  }
-
+ 
  /* تقليل سمك الحدود على الشاشات الصغيرة */
  @media (max-width: 390px) {
     .video-wrapper {
        border-width: 6px;
     }
+    .name{
+       font-size: 25px;}
+       .title{
+          font-size: 19px;
+       } 
+       .rkk{
+          width: 41px;
+          margin-left: 30px;
+          margin-right: 30px;
+       }
+.MMOOSSAA{
+   width: 341px;
+ margin-left: 30px;
+ margin-right: 30px;
+}
  }
 
  /* ...existing code... */
