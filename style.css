@@ -8,6 +8,8 @@
    background-color: #d40000;
  
 }
+ navigation
+ 
 header .ssddg{
    width: 30px;}
 .r{
@@ -66,13 +68,13 @@ header {
   font-size: 14px;
   font-weight: bold;
   background: #701521;
-  padding: 6px 12px;
+  padding: 2px;
   border-radius: 6px;
   transition: all 0.3s;
 }
 
 .navigation a:hover {
-  background: #a01f2e;
+  background: #bb2032;
   transform: translateY(-2px);
 }
 
@@ -80,13 +82,13 @@ header {
 hr {
   border: none;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(112,11,11,0.5), transparent);
+  background: linear-gradient(to right, transparent, rgba(149, 14, 14, 0.63), transparent);
   margin: 0;
 }
-
+ 
 /* ===================== HERO SECTION ===================== */
 .hero {
-  padding: 20px;
+  
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -100,9 +102,9 @@ hr {
   flex: 1;
   min-width: 250px;
   padding: 20px;
-  background: linear-gradient(135deg, rgba(112,11,11,0.15), rgba(0,0,0,0.3));
+  background: linear-gradient(135deg, rgba(146, 13, 13, 0.466), rgba(0, 0, 0, 0.488));
   border-radius: 15px;
-  border: 2px solid rgba(112,11,11,0.2);
+  border: 2px solid rgba(135, 12, 12, 0.458);
   text-align: center;
 }
 
@@ -115,7 +117,7 @@ hr {
 
 .title {
   font-size: 1.3rem;
-  color: #ff6b6b;
+  color: #fb5858;
   margin-bottom: 20px;
 }
 header .ssddg,
@@ -127,7 +129,7 @@ header .ssddg,
 }
 
 .CV {
-  background: linear-gradient(to right, #701521, #a01f2e);
+  background: linear-gradient(to right, #8d1928, #b41f30);
   color: #fff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -141,7 +143,7 @@ header .ssddg,
 
 .CV:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(112,11,11,0.4);
+  box-shadow: 0 8px 20px rgba(139, 13, 13, 0.58);
 }
 
 .CV img {
@@ -184,10 +186,10 @@ header .ssddg,
   gap: 24px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, rgba(112,11,11,0.15), rgba(0,0,0,0.2));
+  background: linear-gradient(180deg, rgba(136, 14, 14, 0.431), rgba(0, 0, 0, 0.477));
   border-radius: 15px;
-  border: 2px solid rgba(112,11,11,0.3);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  border: 2px solid rgba(132, 14, 14, 0.469);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.548);
 }
 
 .aboutMEImg {
@@ -195,9 +197,9 @@ header .ssddg,
   height: 250px;
   object-fit: cover;
   border-radius: 15px;
-  border: 4px solid #701521;
+  border: 4px solid #811625;
   flex: 0 0 250px;
-  box-shadow: 0 6px 20px rgba(112,11,11,0.4);
+  box-shadow: 0 6px 20px rgba(128, 11, 11, 0.589);
 }
 
 .textContainer {
@@ -229,9 +231,9 @@ header .ssddg,
   max-width: 1100px;
   margin: 30px auto;
   padding: 20px;
-  background: linear-gradient(180deg, rgba(112,11,11,0.1), rgba(0,0,0,0.15));
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0));
   border-radius: 15px;
-  border: 2px solid rgba(112,11,11,0.25);
+  border: 2px solid rgba(129, 13, 13, 0.487);
   box-shadow: 0 8px 30px rgba(0,0,0,0.35);
 }
 
@@ -240,24 +242,35 @@ header .ssddg,
   font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
-  background: linear-gradient(to right, #701521, #a01f2e);
+  background: linear-gradient(to right, #821725, #a11c2c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+.ttyyuu {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .intro-section {
   text-align: center;
   margin-bottom: 30px;
 }
-
+ 
+ 
 .intro-section p {
   font-size: 1.1rem;
   color: #fff;
   padding: 15px;
   background: rgba(112,11,11,0.15);
   border-radius: 10px;
-  border-left: 4px solid #701521;
+ 
+  border-left: 4px solid #821625;
 }
 
 .content-list {
@@ -265,13 +278,14 @@ header .ssddg,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  padding: 0;
+  padding-bottom: 2%;
   margin: 0;
+
 }
 
 .content-list li {
-  background: rgba(112,11,11,0.1);
-  border: 2px solid rgba(112,11,11,0.2);
+  background: rgba(141, 13, 13, 0.499);
+  border: 2px solid rgba(133, 14, 14, 0.476);
   border-radius: 12px;
   padding: 20px;
   transition: all 0.3s;
@@ -279,17 +293,18 @@ header .ssddg,
 
 .content-list li:hover {
   transform: translateY(-5px);
-  background: rgba(112,11,11,0.2);
-  box-shadow: 0 10px 30px rgba(112,11,11,0.3);
+  background: rgba(132, 13, 13, 0.483);
+  box-shadow: 0 10px 30px rgba(132, 13, 13, 0.579);
 }
-
+container
 .content-list a {
   text-decoration: none;
-  color: inherit;
+  color: inherit; 
+  
 }
 
 .content-list a strong {
-  color: #ff6b6b;
+  color: #6aff00c0;
   font-size: 1.2rem;
   display: block;
   margin-bottom: 8px;
@@ -301,16 +316,17 @@ header .ssddg,
   font-size: 0.95rem;
   margin-top: 8px;
   line-height: 1.6;
+ 
 }
 
 /* ===================== WORKS SECTION ===================== */
 .works {
-  background: linear-gradient(180deg, rgba(112,11,11,0.1), rgba(0,0,0,0.15));
+  background: linear-gradient(180deg, rgba(137, 13, 13, 0.359), rgba(0, 0, 0, 0.434));
   padding: 30px 20px;
   margin: 30px auto;
   border-radius: 15px;
-  border: 2px solid rgba(112,11,11,0.25);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  border: 2px solid rgba(133, 13, 13, 0.48);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.41);
   max-width: 1200px;
 }
 
@@ -328,7 +344,7 @@ header .ssddg,
 .projectTitle h2 {
   font-size: 2rem;
   color: #fff;
-  background: linear-gradient(to right, #701521, #a01f2e);
+  background: linear-gradient(to right, #851826, #a11b2b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -345,11 +361,11 @@ header .ssddg,
 }
 
 .works li {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.324);
   border-radius: 12px;
   overflow: hidden;
   padding: 8px;
-  border: 2px solid rgba(112,11,11,0.15);
+  border: 2px solid rgba(133, 13, 13, 0.421);
   transition: all 0.3s;
 }
 
@@ -384,7 +400,7 @@ header .ssddg,
   .worksContainer ul,
   .works ul { grid-template-columns: 1fr; gap:10px; }
 }
-
+ 
 /* بطاقة العنصر */
 .worksContainer li,
 .works li {
@@ -496,10 +512,10 @@ header .ssddg,
 .flex-container{
     display: flex; /* يجعل العناصر بداخلها تترتب بشكل أفقي */
     gap: 20px; /* مسافة بين العناصر (البوردرز) */
-    padding: 10px;
+     
    
 }
-
+header
  footer {
     text-align: center;
     padding: 2rem;
@@ -507,10 +523,7 @@ header .ssddg,
  }
 
  @media (max-width: 1023px) {
-    header {
-       margin-left: 1rem;
-       margin-right: 1rem;
-    }
+ 
 .ssddg{
    border: #000 2px solid;
    padding: 1px;
@@ -520,8 +533,9 @@ header .ssddg,
    
     margin-right: 3px;
 }
+hero
     .hero {
-       flex-direction: column;
+        
        align-items: center;
        gap: 2rem;
     }
@@ -757,9 +771,11 @@ display: inline-block; /* المفتاح: يجعل الصندوق يظهر بج�
           margin-right: 30px;
        }
 .MMOOSSAA{
-   width: 341px;
- margin-left: 30px;
- margin-right: 30px;
+  padding-left: 0%;
+  width: 300px;
+ margin-left:  -13px;
+ margin-right: 0px;
+ padding-bottom: 0%;
 }
  }
 
