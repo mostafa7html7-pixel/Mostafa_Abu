@@ -4,6 +4,19 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.rr{
+    background-color: #ffffff;
+  border-radius: 60px;
+
+}
+.y{
+  background-color: #ffffff;
+  border-radius: 60px;
+}
+/* حذف الخط السفلي من جميع الروابط */
+a {
+  text-decoration: none;
+}
 .ssddg{
    background-color: #d40000;
  
@@ -72,7 +85,7 @@ header {
   border-radius: 6px;
   transition: all 0.3s;
 }
-
+.flex-container
 .navigation a:hover {
   background: #bb2032;
   transform: translateY(-2px);
@@ -150,7 +163,9 @@ header .ssddg,
   width: 20px;
   height: 20px;
 }
-
+ul li a .nmnm{
+  text-align: right;
+}
 /* ===================== VIDEO WRAPPER ===================== */
 .video-wrapper {
   width: 100%;
@@ -236,6 +251,13 @@ header .ssddg,
   border: 2px solid rgba(129, 13, 13, 0.487);
   box-shadow: 0 8px 30px rgba(0,0,0,0.35);
 }
+.fvg {
+  font-size: 19px;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+ color: #00ffe1;
+ text-align: center;
+}
 
 .yyyyy {
   color: #fff;
@@ -304,7 +326,7 @@ container
 }
 
 .content-list a strong {
-  color: #6aff00c0;
+  color: #00ff08;
   font-size: 1.2rem;
   display: block;
   margin-bottom: 8px;
@@ -312,10 +334,10 @@ container
 
 .content-list a span {
   display: block;
-  color: #ccc;
-  font-size: 0.95rem;
+  color: #ffffff;
+  font-size: 1.1rem;
   margin-top: 8px;
-  line-height: 1.6;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  
 }
 
@@ -412,7 +434,7 @@ container
   display: flex;
   flex-direction: column;
 }
-
+container
 /* صورة ثابتة المقاس ومتناسقة */
 .worksContainer li img,
 .works li img {
@@ -512,8 +534,21 @@ container
 .flex-container{
     display: flex; /* يجعل العناصر بداخلها تترتب بشكل أفقي */
     gap: 20px; /* مسافة بين العناصر (البوردرز) */
-     
+     padding: 0%;
    
+}
+footer .asd{
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 16px;
+    margin: 13px;
+    background-color: #000000;
+    width: auto;
+    text-decoration: none;
+    border-width: 0cap;
 }
 header
  footer {
@@ -551,7 +586,9 @@ display: inline-block; /* المفتاح: يجعل الصندوق يظهر بج�
   
     padding: 15px;
     text-align: center;
-    margin-right: 20px; }/* مسافة بين البوردرز *
+    margin-right: 20px; }
+    co
+    /* مسافة بين البوردرز *
 }
     .name,
     .title {
@@ -692,7 +729,9 @@ display: inline-block; /* المفتاح: يجعل الصندوق يظهر بج�
  }
  
  
-
+ul li a .bbbbb{
+  text-align: right;
+}
  /* يجعل الفيديو يملأ الحاوية ويقص ما يتجاوز لتفادي الفراغين الجانبيين */
  .video-wrapper .rkk {
  
@@ -825,7 +864,7 @@ header img.logo {
   border: 3px solid rgba(171, 0, 0, 0.35);
   flex: 0 0 200px;
 }
-
+.fvg
 /* نص عني - يحتل المساحة الباقية ويتراجع على الشاشات الصغيرة */
 .textContainer,
 .aboutContent {
@@ -844,6 +883,7 @@ header img.logo {
   line-height: 1.6;
   font-size: 0.98rem;
   text-align: right; /* مناسب للنص العربي */
+  text-decoration: none;
 }
 
 /* تجاوب - على الموبايل نرتب العناصر عمودي */
@@ -860,10 +900,11 @@ header img.logo {
   }
   .textContainer, .aboutContent {
     padding: 6px 4px;
+    text-decoration: none;
   }
   .heroSub {
   width: 400px;
- height: 500px;
+  
 }
 } 
 
@@ -873,7 +914,7 @@ header img.logo {
   .textContainer p, .aboutContent p { font-size: 0.9rem; }
 }
 
-/* منع أي هوامش سالبة أو عرض ثابت يكسّر التجاوب */
+/* منع أي هوامج سالبة أو عرض ثابت يكسّر التجاوب */
 /* تلغي قواعد قديمة متضاربة */
 .aboutMePar,
 .aboutMEImg,
