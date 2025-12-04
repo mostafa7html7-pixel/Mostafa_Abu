@@ -4,10 +4,110 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* ===================== HERO IMAGE - RESPONSIVE ===================== */
+@media (max-width: 920px) {
+.hero {
+flex-direction: column !important;
+align-items: center;
+}
+.heroSub { order: 1 !important; width: 100%; }
+.MKO { order: 2 !important; width: 100%; margin-top: 12px; }
+}
+
+
+.hero {
+flex-direction: column !important;
+align-items: center;
+}
+.heroSub { order: 1 !important; width: 100%; }
+.MKO { order: 2 !important; width: 100%; margin-top: 12px; }
+
+.MKO {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MKO img,
+.video_L {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  background: #000;
+}
+
+/* Desktop: صورة كاملة بحجمها الأصلي */
+@media (min-width: 1200px) {
+  .MKO {
+    max-width: 600px;
+  }
+
+  .MKO img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablet: صورة تتكيف مع العرض */
+@media (max-width: 920px) {
+  .MKO {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .MKO img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* Mobile: صورة صغيرة وواضحة مع النصوص */
+@media (max-width: 720px) {
+  .MKO {
+    max-width: 100%;
+    margin: 12px auto;
+    padding: 0;
+  }
+
+  .MKO img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* شاشات صغيرة جداً */
+@media (max-width: 480px) {
+  .MKO {
+    max-width: 100%;
+    margin: 8px;
+  }
+
+  .MKO img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===================== END HERO IMAGE ===================== */
+.video_L{
+border: none;
+border-radius: 40px;
+}
 .rr{
     background-color: #ffffff;
   border-radius: 60px;
-
 }
 .y{
   background-color: #ffffff;
