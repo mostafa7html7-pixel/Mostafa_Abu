@@ -4,7 +4,185 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
- 
+ /* =============================================================================================== */
+ /* ====== Make hero image larger & consistent ====== */
+
+/* Layout: two columns on desktop, stacked on small screens */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+@media (max-width: 720px) {
+  /* اجعل مجموعة الأزرار تتكدس عمودياً وتتمركز */
+  .flex-container {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  /* كل صندوق زر يصبح بعرض كامل داخلياً مع تمركز المحتوى */
+  .flex-container .heroBtns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* الأزرار تظهر بعرض مناسب، padding أكبر، وخط أوضح */
+  .flex-container .heroBtns a.CV {
+    display: inline-block;
+    width: 100%;
+    max-width: 420px; /* أقصى عرض على الهواتف الكبيرة؛ غيّره لو تحب */
+    padding: 12px 18px;
+    font-size: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  /* لو أردت تمييز زر "أفضل المدرسين" بصيغة خاصة (اختياري) */
+  .flex-container .heroBtns:nth-child(2) a.CV {
+    /* مثال: خلفية شفافة وحدود واضحة — احذف أو عدّل إذا لا تريده */
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.12);
+    color: #fff;
+  }
+}
+/* نص البانر (العمود الأيسر) */
+.heroSub {
+  flex: 1 1 48%;
+  min-width: 320px;
+  max-width: 900px;
+}
+
+/* صندوق الصورة (العمود الأيمن) */
+.MKO {
+  flex: 0 0 48%;
+  max-width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* الصورة نفسها - أكبر، متناسبة، وتحترم النصوص داخلها (لا تقص) */
+.MKO img,
+.video_L {
+  width: 100%;
+  height: auto;
+  max-width: 760px;     /* أكبر عرض للصورة على الديسكتوب */
+  max-height: 72vh;     /* لا تتجاوز ارتفاع الشاشة كثيرا */
+  object-fit: contain;  /* حافظ على النص داخل الصورة دون قص */
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* تكبير إضافي على شاشات كبيرة جداً */
+@media (min-width: 1400px) {
+  .heroSub { flex: 1 1 50%; }
+  .MKO     { flex: 0 0 50%; max-width: 50%; }
+  .MKO img { max-width: 820px; max-height: 78vh; }
+}
+
+/* شاشات متوسطة */
+@media (max-width: 1100px) {
+  .heroSub { flex: 1 1 60%; }
+  .MKO     { flex: 0 0 40%; max-width: 40%; }
+  .MKO img { max-width: 640px; }
+}
+
+/* موبايل: نجعل الصورة تحت النص (stacked) وتعرض بعرض كامل */
+@media (max-width: 920px) {
+  .hero { flex-direction: column-reverse; } /* النص أعلاه، الصورة بعده */
+  .heroSub { order: 1; width: 100%; max-width: 100%; }
+  .MKO     { order: 2; width: 100%; max-width: 100%; margin-top: 12px; }
+  .MKO img { max-width: 100%; height: auto; width: 100%; box-shadow: none; border-radius: 10px; }
+}
+
+/* شاشة صغيرة جداً: خفف المسافات وحافظ على وضوح النص داخل الصورة */
+@media (max-width: 480px) {
+  .hero { gap: 12px; padding: 8px; }
+  .MMOOSSAA .name { font-size: 1.6rem; } /* إن أردت تعديل حجم العنوان على الهواتف */
+  .MKO img { max-height: 55vh; }
+}
+ /* ====== Make hero image larger & consistent ====== */
+
+/* Layout: two columns on desktop, stacked on small screens */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+/* نص البانر (العمود الأيسر) */
+.heroSub {
+  flex: 1 1 48%;
+  min-width: 320px;
+  max-width: 900px;
+}
+
+/* صندوق الصورة (العمود الأيمن) */
+.MKO {
+  flex: 0 0 48%;
+  max-width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* الصورة نفسها - أكبر، متناسبة، وتحترم النصوص داخلها (لا تقص) */
+.MKO img,
+.video_L {
+  width: 100%;
+  height: auto;
+  max-width: 760px;     /* أكبر عرض للصورة على الديسكتوب */
+  max-height: 72vh;     /* لا تتجاوز ارتفاع الشاشة كثيرا */
+  object-fit: contain;  /* حافظ على النص داخل الصورة دون قص */
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* تكبير إضافي على شاشات كبيرة جداً */
+@media (min-width: 1400px) {
+  .heroSub { flex: 1 1 50%; }
+  .MKO     { flex: 0 0 50%; max-width: 50%; }
+  .MKO img { max-width: 820px; max-height: 78vh; }
+}
+
+/* شاشات متوسطة */
+@media (max-width: 1100px) {
+  .heroSub { flex: 1 1 60%; }
+  .MKO     { flex: 0 0 40%; max-width: 40%; }
+  .MKO img { max-width: 640px; }
+}
+
+/* موبايل: نجعل الصورة تحت النص (stacked) وتعرض بعرض كامل */
+@media (max-width: 920px) {
+  .hero { flex-direction: column-reverse; } /* النص أعلاه، الصورة بعده */
+  .heroSub { order: 1; width: 100%; max-width: 100%; }
+  .MKO     { order: 2; width: 100%; max-width: 100%; margin-top: 12px; }
+  .MKO img { max-width: 100%; height: auto; width: 100%; box-shadow: none; border-radius: 10px; }
+}
+
+/* شاشة صغيرة جداً: خفف المسافات وحافظ على وضوح النص داخل الصورة */
+@media (max-width: 480px) {
+  .hero { gap: 12px; padding: 8px; }
+  .MMOOSSAA .name { font-size: 1.6rem; } /* إن أردت تعديل حجم العنوان على الهواتف */
+  .MKO img { max-height: 55vh; }
+}
 /* ===================== HERO IMAGE - RESPONSIVE ===================== */
 @media (max-width: 920px) {
 .hero {
@@ -26,7 +204,6 @@ align-items: center;
 .MKO {
   width: 100%;
   max-width: 100%;
-   
   padding: 0;
   overflow: hidden;
   border-radius: 12px;
