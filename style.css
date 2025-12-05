@@ -280,7 +280,7 @@ a {
    background-color: #d40000;
  
 }
- navigation
+ 
  
 header .ssddg{
    width: 30px;}
@@ -827,7 +827,7 @@ header
    
     margin-right: 3px;
 }
-hero
+ 
     .hero {
         
        align-items: center;
@@ -837,7 +837,7 @@ hero
     .heroImg {
        width: 400px;
     }
-    ssddg
+    
 #border-box{
 display: inline-block; /* المفتاح: يجعل الصندوق يظهر بجانب غيره */
     width: 150px;

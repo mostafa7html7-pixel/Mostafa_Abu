@@ -1,12 +1,724 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p</title>
     <link rel="stylesheet" href="m.css">
-    <title>هتتعمل قريب</title>
+    <style>
+        /* ------------------------ */
+        body {
+            /* 1. تحديد مسار الصورة */
+            background-color: #333333;
+            background-image: o url('https://img.pikbest.com/backgrounds/20190423/learning-endless-poster-background_1816659.jpg!bwr800');
+
+            /* 2. ضبط خصائص العرض (مهمة جداً) */
+            /* لمنع تكرار الصورة */
+
+
+            /* لجعل الخلفية تغطي المساحة بالكامل */
+
+
+            /* لتثبيت الصورة عند التمرير أو جعلها تتحرك مع الصفحة */
+            background-attachment: fixed;
+            /* أو scroll */
+
+            /* لضبط مكان ظهور الصورة (مثلاً في المنتصف) */
+            background-position: center center;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .img-img {
+            width: 200px;
+            object-fit: cover;
+            height: auto;
+
+        }
+
+        /* إعادة تعيين عام */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        /* زر الهامبرجر */
+        .hamburger {
+            font-size: 26px;
+            cursor: pointer;
+            padding: 11px 14px;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1001;
+            background: linear-gradient(135deg, #667eea 0%, #70439e 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .hamburger:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.6);
+        }
+
+        .hamburger:active {
+            transform: scale(0.95);
+        }
+
+        /* القائمة الجانبية */
+        .sidebar {
+            width: 0;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            right: 0;
+            background: linear-gradient(180deg, #512723c9 0%, #542a1bc4 100%);
+            overflow: hidden;
+            transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            padding-top: 55px;
+            padding-bottom: 20px;
+            box-shadow: -4px 0 15px rgba(0, 0, 0, 0.3);
+            color: white;
+            height: auto;
+            max-height: 100vh;
+        }
+
+        .sidebar.open {
+            width: 240px;
+        }
+    .math{
+                 /* 1. تحديد مسار الصورة */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJnGbmz17WehXQisi202g5t8L4i7HcKZhmag&s');
+            /* لمنع تكرار الصورة */
+
+
+            /* لجعل الخلفية تغطي المساحة بالكامل */
+
+
+            /* لتثبيت الصورة عند التمرير أو جعلها تتحرك مع الصفحة */
+            background-attachment: fixed;
+            /* أو scroll */
+
+            /* لضبط مكان ظهور الصورة (مثلاً في المنتصف) */
+            background-position: center center;
+    }
+        .science {
+            /* 1. تحديد مسار الصورة */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSQR6IB1kASKaQ0sYVRpCrQ6kPxvQF_q0jlw&s');
+
+            /* 2. ضبط خصائص العرض (مهمة جداً) */
+            /* لمنع تكرار الصورة */
+
+
+            /* لجعل الخلفية تغطي المساحة بالكامل */
+
+
+            /* لتثبيت الصورة عند التمرير أو جعلها تتحرك مع الصفحة */
+            background-attachment: fixed;
+            /* أو scroll */
+
+            /* لضبط مكان ظهور الصورة (مثلاً في المنتصف) */
+            background-position: center center;
+
+        }
+
+        .arab {
+
+            /* 1. تحديد مسار الصورة */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_tsK9jOJK0qNIbkxj-jL9LNWR-S_l9QpJvQ&s');
+
+            /* 2. ضبط خصائص العرض (مهمة جداً) */
+            /* لمنع تكرار الصورة */
+
+
+            /* لجعل الخلفية تغطي المساحة بالكامل */
+
+
+            /* لتثبيت الصورة عند التمرير أو جعلها تتحرك مع الصفحة */
+            background-attachment: fixed;
+            /* أو scroll */
+
+            /* لضبط مكان ظهور الصورة (مثلاً في المنتصف) */
+            background-position: center center;
+
+        }
+
+        .sidebar a {
+            padding: 14px 18px;
+            text-decoration: none;
+            font-size: 1.02rem;
+            color: #ecf0f1;
+            display: block;
+            transition: all 0.3s ease;
+            border-right: 4px solid transparent;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .sidebar a:hover {
+            background: rgba(102, 126, 234, 0.2);
+            color: #667eea;
+            border-right-color: #667eea;
+            padding-right: 12px;
+        }
+
+        .sidebar a:active {
+            background: rgba(102, 126, 234, 0.35);
+            transform: translateX(-4px);
+        }
+
+        /* زر الإغلاق */
+        .sidebar .closebtn {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: auto;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 28px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+            z-index: 1100;
+            padding: 0;
+        }
+
+        .sidebar .closebtn:hover,
+        .sidebar .closebtn:focus {
+            background: #ffffff;
+            color: #512723;
+            transform: rotate(180deg) scale(1.08);
+            outline: none;
+        }
+
+        /* محتوى الصفحة */
+        .main-content {
+            padding: 30px 20px;
+            transition: all 0.4s ease;
+        }
+
+        /* بطاقات المعلمين */
+        .img-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        
+
+        .art-1 {
+            display: block;
+            width: min(92%, 680px);
+            /* عرض مرن: لا يتجاوز 680px */
+            max-width: 100%;
+            margin: 18px auto;
+            /* يوسّط العنصر أفقياً */
+            padding: clamp(10px, 2.6vw, 18px) clamp(12px, 4vw, 28px);
+            border: 4px solid rgba(0, 0, 0, 0.9);
+            /* بوردر واضح لكن ليس سميك جداً على الموبايل */
+            border-radius: 38px;
+            background: rgb(197, 0, 66);
+            /* خلفية فاتحة للقراءة فوق أي صورة */
+            text-align: center;
+            font-family: 'Arial', Tahoma, sans-serif;
+            font-size: clamp(1rem, 2.6vw, 1.4rem);
+            /* خط يتكيف مع حجم الشاشة */
+            line-height: 1.25;
+            color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+            box-sizing: border-box;
+            margin-top: 36px;
+        }
+
+        .art {
+            display: block;
+            width: min(92%, 680px);
+            /* عرض مرن: لا يتجاوز 680px */
+            max-width: 100%;
+            margin: 18px auto;
+            /* يوسّط العنصر أفقياً */
+            padding: clamp(10px, 2.6vw, 18px) clamp(12px, 4vw, 28px);
+            border: 4px solid rgba(0, 0, 0, 0.9);
+            /* بوردر واضح لكن ليس سميك جداً على الموبايل */
+            border-radius: 38px;
+            background: rgb(255, 255, 255);
+            /* خلفية فاتحة للقراءة فوق أي صورة */
+            text-align: center;
+            font-family: 'Arial', Tahoma, sans-serif;
+            font-size: clamp(1.1rem, 2.7vw, 1.5rem);
+            /* خط يتكيف مع حجم الشاشة */
+            line-height: 1.25;
+            color: #111;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+            box-sizing: border-box;
+            margin-top: 36px;
+        }
+
+        /* تحسينات خاصة بالشاشات الصغيرة */
+        @media (max-width: 420px) {
+            .art {
+                width: calc(100% - 28px);
+                /* تترك حواف صغيرة على الجانبين */
+                margin: 12px auto;
+                padding: 10px 12px;
+                border-width: 3px;
+                border-radius: 14px;
+                font-size: 1rem;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+            }
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+
+        .card {
+            width: 325px;
+            background-image: url('');
+            background-color: #000000;
+            border-radius: 9px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-content h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .card-content p {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .card-content .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #667eea;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 16px;
+            color: #fff;
+            transition: background 0.3s ease;
+        }
+
+        .card-content .btn:hover {
+            background-color: #764ba2;
+        }
+
+        /* تجاوب الموبايل */
+        @media (max-width: 720px) {
+            .sidebar.open {
+                width: 200px;
+            }
+
+            .sidebar a {
+                font-size: 0.98rem;
+                padding: 12px 16px;
+            }
+
+            .hamburger {
+                font-size: 24px;
+                padding: 9px 12px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .sidebar.open {
+                width: 170px;
+            }
+
+            .sidebar a {
+                font-size: 0.92rem;
+                padding: 11px 14px;
+            }
+
+            .hamburger {
+                font-size: 22px;
+                padding: 8px 10px;
+            }
+
+            .sidebar .closebtn {
+                font-size: 24px;
+                width: 34px;
+                height: 34px;
+            }
+
+            .card {
+                width: 95%;
+                margin: 15px auto;
+            }
+        }
+
+        /* ===================== HEADER ===================== */
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+            border-bottom: 2px solid rgba(112, 11, 11, 0.3);
+            max-width: 100%;
+            gap: 15px;
+            flex-direction: row-reverse;
+            /* يضع الشعار على اليمين دائماً */
+        }
+
+        /* الشعار */
+        .ssddg {
+            width: clamp(45px, 8vw, 65px);
+            height: clamp(45px, 8vw, 65px);
+            border-radius: 10px;
+            object-fit: cover;
+            border: 2px solid #701521;
+            box-shadow: 0 4px 12px rgba(212, 0, 0, 0.3);
+            flex-shrink: 0;
+            background-color: #ff0000;
+        }
+
+
+
+        /* تحسينات للموبايل */
+        @media (max-width: 768px) {
+            header {
+                padding: 8px 15px;
+            }
+
+            .ssddg {
+                width: 50px;
+                height: 50px;
+            }
+
+            .navigation ul {
+                gap: 6px;
+            }
+
+            .navigation a {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 8px 12px;
+            }
+
+            .ssddg {
+                width: 45px;
+                height: 45px;
+                background-color: rgb(255, 0, 0);
+            }
+
+
+        }
+
+        .art-2 {
+            text-align: center;
+            margin: 1px;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
 </head>
+
 <body>
-<h1 class="un">لسى  المهندس:  مصطفى عبقرينو معملش الصفحة انشاء الله  هيعملها قريب</h1> 
+    <header>
+        <!-- <img src="g.png" alt="شعاع العلم" class="ss"> -->
+        <img src="android-chrome-192x192.png" alt="" class="ssddg">
+        <h1 class="art-2">منصة وعى التعليمية</h1>
+
+    </header>
+    <span class="hamburger" onclick="openNav()">&#9776;</span>
+
+    <div id="mySidebar" class="sidebar">
+        <button class="closebtn" onclick="closeNav()" aria-label="إغلاق القائمة">&times;</button>
+        <div>
+            <a href="#arabic">أساتذة العربى</a>
+        </div>
+        <div>
+            <a href="#science">أساتذة العلوم</a>
+        </div>
+        <div>
+            <a href="#math">أساتذة الرياضيات</a>
+        </div>
+        <div>
+            <a href="#english">أساتذة الإنجليزي</a>
+        </div>
+        <div>
+            <a href="#">أساتذة التاريخ</a>
+        </div>
+        <div>
+            <a href="#">أساتذة الفرنساوي</a>
+        </div>
+        <div>
+            <a href="#">أساتذة الفلسفة</a>
+        </div>
+    </div>
+    <h1 class="art-1">موقعنا هو بوابتك الجديدة نحو التعليم المُبَسَّط والمُنظَّم. نُدرك قيمة وقتك، ولذلك صُمّم الموقع
+        خصيصًا ليُسرِّع ويُسهِّل عليك عملية اختيار مدرسك المناسب بكل دقة. بضغطة زر، يمكنك الوصول الفوري والمباشر إلى
+        قناة اليوتيوب الخاصة بمُعلمك ومنصته التعليمية الرسمية، لتنطلق في الدراسة دون تشتيت. موقعنا يتميز بـ سهولة
+        الاستخدام المُطلقة التي تجعل البحث والتنقل متعة، ولا يتوقف الأمر عند هذا الحد، بل نقدم لك مميزات إضافية عديدة
+        لنجعل تجربتك التعليمية فريدة وفعّالة!</h1>
+
+    <section id="arabic" class="arab">
+        <h2 class="art">اَللُّغَةُ الْعَرَبِيَّةُ لِسَانٌ لِلْجَمَالِ وَالْفِكْرِ وَالْأَدَبِ.</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="Screenshot 2025-12-05 014521.png" alt="Mr. Mohamed Salah" class="img-img">
+                <div class="card-content">
+                    <h3>Mr. Mohamed Salah</h3>
+                    <p>الأستاذ محمد صلاح هو أحد أشهر معلمي اللغة العربية في مصر ويحظى بشعبية كبيرة بين طلاب المرحلة
+                        الثانوية، خاصةً لأسلوبه المبتكر في التدريس عبر منصات الإنترنت وقنوات يوتيوب.</p>
+                    <a href="http://www.youtube.com/@mohamedsalah.bassthalk" target="_blank" class="btn"> قناة اليتيوب
+                    </a>
+                    <a href="https://bassthalk.com/course/57" target="_blank" class="btn"> المنصة الخاصة بالمستر
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="523526324_1069029182095558_8817643035868361753_n.jpg" alt="Mr. Reda Al-Farouk"
+                    class="img-img">
+                <div class="card-content">
+                    <h3>Mr. Reda Al-Farouk</h3>
+                    <p>يُعرف الأستاذ رضا الفاروق بمسيرة تعليمية طويلة ومؤثرة، ويتابعه الملايين من الطلاب على منصات
+                        مختلفة.</p>
+                    <a href="https://www.youtube.com/@RedaElFaroukOfficial" target="_blank" class="btn"> قناة اليتيوب
+                    </a>
+                    <a href="https://mrredaelfarouk.com/" target="_blank" class="btn"> المنصة الخاصة بالمستر
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="583261800_1336231781851118_6694167530461850029_n.jpg" alt="Mr. Al-Qaysar Muhammad Tariq"
+                    class="img-img">
+                <div class="card-content">
+                    <h3>Mr. Al-Qaysar Muhammad Tariq</h3>
+                    <p>الأستاذ محمد طارق هو معلم للغة العربية متخصص في تدريس مناهج الثانوية العامة (المراحل الثلاث).
+                        قناته ومنصاته التعليمية هي مصدر أساسي للطلاب الذين يبحثون عن شروحات شاملة للمادة.</p>
+                    <a href="https://www.youtube.com/@Mr.Mohamed_Tarek" target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href="https://www.elqaiser.com/" target="_blank" class="btn"> المنصة الخاصة بالمستر
+                    </a>
+                </div>
+            </div>
+            <!-- ------------------------ -->
+
+            <div class="card">
+                <img src="gQeYAfKhYIWCVyGUloP9qJ4PtsqIPI2aNVoup4lz.png" alt="Mr. Walid Mohsen" class="img-img">
+                <div class="card-content">
+                    <h3>Mr. Walid Mohsen</h3>
+                    <p>مستر وليد محسن هو أحد الأساتذة البارزين والمشهورين في تدريس مادة اللغة العربية لطلاب المرحلة
+                        الثانوية، خاصةً الصف الثالث الثانوي في مصر.</p>
+                    <a href="http://www.youtube.com/@waleedmohsen" target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href="https://www.waleed-mohsen.com/" target="_blank" class="btn"> المنصة الخاصة بالمستر
+                    </a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="dr.jpg" alt="Mr. Rabie Al-Jamhoudi" class="img-img">
+                <div class="card-content">
+                    <h3>Mr. Rabie Al-Jamhoudi</h3>
+                    <p>يُعرف الأستاذ الدكتور ربيع الجمهودي بأنه مُعلم ومُحاضر متخصص في تدريس مادة اللغة العربية لطلاب
+                        المراحل الثانوية (العام والأزهري).</p>
+                    <a href="http://www.youtube.com/@rabea_mohamed" target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href="https://rabea-elgamhoudy.com/" target="_blank" class="btn"> المنصة الخاصة بالمستر
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- ______ -->
+        </div>
+    </section>
+    <!-- _____________________________________________________________________________ -->
+    <section id="science" class="science">
+        <h1 class="art">اَلْعُلُومُ هِيَ مِفْتَاحُ فَهْمِ الْكَوْنِ وَتَطْوِيرِ الْحَيَاةِ الْبَشَرِيَّةِ.</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="MMm_n.jpg" alt="Mr. Khaled Saqr" class="img-img">
+                <div class="card-content">
+                    <h3>Mr. Khaled Saqr</h3>
+                    <p>يُعد الأستاذ خالد صقر مُعلمًا ومُحاضرًا مشهورًا ومتخصصًا في تدريس مادة الكيمياء والعلوم المتكاملة
+                        للمراحل الثانوية.</p>
+                    <a href="http://www.youtube.com/@khaledsakr8181" target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href="https://khaled-sakr.com/" target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="errrr.png" alt="Mr Ahmed ElGohary" class="img-img">
+                <div class="card-content">
+                    <h3>Mr Ahmed ElGohary</h3>
+                    <p>الأستاذ أحمد الجوهري هو مُعلم متخصص ومشهور في تدريس مادة الأحياء لطلاب المراحل الثانوية، وله حضور
+                        قوي على الإنترنت من خلال منصته التعليمية.</p>
+                    <a href="http://www.youtube.com/@Gohary" target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href="https://eduvalu.com/instructors/9" target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="channels4_profile.jpg" alt="" class="img-img">
+                <div class="card-content">
+                    <h3>Mr. Haider Mohammed</h3>
+                    <p>مستر حيدر محمد هو أحد الأساتذة المعروفين في تدريس مادتي الجيولوجيا و العلوم المتكاملة للمرحلة
+                        الثانوية.</p>
+                    <a href="http://www.youtube.com/@Mr.HaiderMohamed" target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href="https://haidermohamed.com/" target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ___________________________________________________________________________ -->
+    <section id="math" class="math">
+        <h1 class="art">الـرِّيَاضِيَّاتُ</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="ffffgh_n.jpg" alt="Mr / Lotfy zahran" class="img-img">
+                <div class="card-content">
+                    <h3> Mr / Lotfy zahran</h3>
+                     <p>مستر لطفي زهران هو مهندس ومدرس رياضيات مشهور للمرحلة الثانوية، معروف بأسلوبه المُبسَّط والمُركَّز على التأسيس السليم في جميع فروع المادة. يقدم شرحاً شاملاً وتدريبات مكثفة عبر منصته وعبر محتوى عالي الجودة على يوتيوب.</p>
+                    <a href="http://www.youtube.com/@-mrlotfyzahran4469" target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href="https://lotfy-zahran.com/" target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="" alt="" class="img-img">
+                <div class="card-content">
+                    <h3> </h3>
+                     <p></p>
+                    <a href=" " target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href=" " target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="" alt="" class="img-img">
+                <div class="card-content">
+                    <h3> </h3>
+                    <p></p>
+                    <a href=" " target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href=" " target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ________________________________________________________________________________ -->
+       <section id="" class="">
+        <h1 class="art">  English Language </h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="" alt="Mr / Lotfy zahran" class="img-img">
+                <div class="card-content">
+                    <h3></h3>
+                     <p></p>
+                    <a href="" target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href="" target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="" alt="" class="img-img">
+                <div class="card-content">
+                    <h3> </h3>
+                     <p></p>
+                    <a href=" " target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href=" " target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="" alt="" class="img-img">
+                <div class="card-content">
+                    <h3> </h3>
+                    <p></p>
+                    <a href=" " target="_blank" class="btn"> قناة اليتيوب </a>
+                    <a href=" " target="_blank" class="btn"> المنصة الخاصة بالمستر </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- _____________________________________________________________________________________________________________________________ -->
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            const sidebar = document.getElementById("mySidebar");
+            sidebar.classList.add("open");
+        }
+
+        function closeNav() {
+            const sidebar = document.getElementById("mySidebar");
+            sidebar.classList.remove("open");
+        }
+
+        // إغلاق القائمة عند الضغط على أي رابط
+        document.querySelectorAll(".sidebar a").forEach(link => {
+            link.addEventListener("click", () => {
+                setTimeout(closeNav, 200);
+            });
+        });
+
+        // إغلاق القائمة عند الضغط خارجها
+        document.addEventListener("click", (e) => {
+            const sidebar = document.getElementById("mySidebar");
+            const hamburger = document.querySelector(".hamburger");
+            if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+                closeNav();
+            }
+        });
+    </script>
 </body>
+
+</html>
+
+
+
+</body>
+
 </html>
