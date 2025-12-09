@@ -4,9 +4,319 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+/* ===================== Compact responsive layout for last section (#science) ===================== */
+#science {
+  max-width: 820px;
+  margin: 20px auto;
+  padding: 18px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(112,11,11,0.06));
+  border-radius: 14px;
+  border: 1px solid rgba(112,11,11,0.12);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  box-sizing: border-box;
+}
+/* ===================== COMPACT CONTACT SECTION ===================== */
+.contactcontainer {
+  max-width: 680px !important;
+  margin: 16px auto !important;
+  padding: 18px !important;
+  background: linear-gradient(180deg, rgba(112,11,11,0.08), rgba(0,0,0,0.12)) !important;
+  border-radius: 13px !important;
+  border: 1px solid rgba(112,11,11,0.14) !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.32) !important;
+  text-align: center;
+}
+
+.contactTitle {
+  margin-bottom: 14px;
+}
+
+.contactTitle h2 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  margin: 4px 0;
+  color: #fff;
+}
+
+.contactTitle .aboutName {
+  background: linear-gradient(to right, #821725, #a11c2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contactTitle .aboutTitle {
+  color: #fff;
+}
+
+/* Email and phone section */
+.contacty {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.emailAndPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.emailAndPhone img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.emailAndPhone a {
+  text-decoration: none;
+  color: #fff;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: color 0.3s;
+}
+
+.emailAndPhone a:hover {
+  color: #ff6b6b;
+}
+
+.emailAndPhone h3 {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* Social media grid - compact */
+.contactcontainer .socialMedia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.contactcontainer .socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(112,11,11,0.15);
+  border: 1px solid rgba(112,11,11,0.2);
+  transition: all 0.3s;
+  padding: 0;
+  margin: 0;
+}
+
+.contactcontainer .socialMedia a:hover {
+  transform: scale(1.12);
+  background: rgba(112,11,11,0.28);
+  box-shadow: 0 6px 16px rgba(132, 13, 13, 0.4);
+}
+
+.contactcontainer .socialMedia img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Mobile optimization */
+@media (max-width: 720px) {
+  .contactcontainer {
+    max-width: 92% !important;
+    margin: 12px auto !important;
+    padding: 14px !important;
+  }
+
+  .contactTitle h2 {
+    font-size: 1.3rem;
+  }
+
+  .contacty { gap: 10px; }
+
+  .emailAndPhone img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contactcontainer .socialMedia {
+    gap: 8px;
+    max-width: 260px;
+  }
+
+  .contactcontainer .socialMedia a {
+    width: 44px;
+    height: 44px;
+  }
+
+  .contactcontainer .socialMedia img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 420px) {
+  .contactcontainer {
+    padding: 12px !important;
+    border-radius: 11px !important;
+  }
+
+  .contactTitle h2 {
+    font-size: 1.1rem;
+  }
+
+  .emailAndPhone {
+    gap: 8px;
+  }
+
+  .emailAndPhone img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .emailAndPhone h3 {
+    font-size: 0.9rem;
+  }
+
+  .contactcontainer .socialMedia {
+    gap: 6px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 200px;
+  }
+
+  .contactcontainer .socialMedia a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contactcontainer .socialMedia img {
+    width: 18px;
+    height: 18px;
+  }
+}
+/* tighten space above cards for compact look */
+#science .card-container {
+  margin-top: 6px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+/* make each card compact: image on the left, text on the right */
+#science .card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  background: rgba(218,0,0,0.08);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 6px 0;
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-sizing: border-box;
+}
+
+/* small consistent thumbnail */
+#science .card img.img-img {
+  width: 88px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex: 0 0 88px;
+  background: #111;
+}
+
+/* content area: tighter spacing */
+#science .card-content {
+  padding: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* title & description styles */
+#science .card-content h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #fff;
+}
+#science .card-content p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #e6e6e6;
+  opacity: 0.9;
+  line-height: 1.2;
+  max-height: 3.2rem; /* clamp visible text */
+  overflow: hidden;
+}
+
+/* button smaller and inline */
+#science .card-content .btn {
+  align-self: flex-start;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+/* Mobile: make it even more compact */
+@media (max-width: 720px) {
+  #science {
+    max-width: 92%;
+    margin: 12px auto;
+    padding: 12px;
+  }
+
+  #science .card {
+    gap: 10px;
+    padding: 9px;
+  }
+
+  #science .card img.img-img {
+    width: 72px;
+    height: 56px;
+    flex: 0 0 72px;
+  }
+
+  #science .card-content h3 {
+    font-size: 0.98rem;
+  }
+
+  /* hide long descriptions on small screens to save space */
+  #science .card-content p { display: none; }
+
+  #science .card-content .btn {
+    padding: 6px 8px;
+    font-size: 0.88rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 420px) {
+  #science { padding: 10px; border-radius: 12px; }
+  #science .card img.img-img { width: 60px; height: 48px; flex: 0 0 60px; }
+  #science .card { padding: 8px; gap: 8px; }
+  #science .card-content h3 { font-size: 0.95rem; }
+}
  /* =============================================================================================== */
  /* ====== Make hero image larger & consistent ====== */
-
+ .title-1{
+  font-size: 1.3rem;
+  color: #fb5858;
+  margin-bottom: 20px;
+  text-align: center;
+  border: #000 3px solid;
+ }
+ .font-1{
+  text-align: center;
+  font-family: monospace;
+ }
 /* Layout: two columns on desktop, stacked on small screens */
 .hero {
   display: flex;
@@ -399,7 +709,179 @@ header .ssddg,
   justify-content: center;
   flex-wrap: wrap;
 }
+ 
+        /* بطاقات المعلمين */
+        .img-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+             
+        }
 
+
+        .art-1 {
+            display: block;
+            width: min(92%, 680px);
+            /* عرض مرن: لا يتجاوز 680px */
+            max-width: 100%;
+            margin: 18px auto;
+            /* يوسّط العنصر أفقياً */
+            padding: clamp(10px, 2.6vw, 18px) clamp(12px, 4vw, 28px);
+            border: 4px solid rgba(0, 0, 0, 0.9);
+            /* بوردر واضح لكن ليس سميك جداً على الموبايل */
+            border-radius: 38px;
+            background: rgb(197, 0, 66);
+            /* خلفية فاتحة للقراءة فوق أي صورة */
+            text-align: center;
+            font-family: 'Arial', Tahoma, sans-serif;
+            font-size: clamp(1rem, 2.6vw, 1.4rem);
+            /* خط يتكيف مع حجم الشاشة */
+            line-height: 1.25;
+            color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+            box-sizing: border-box;
+            margin-top: 36px;
+        }
+
+        .art {
+            display: block;
+            width: min(92%, 680px);
+            /* عرض مرن: لا يتجاوز 680px */
+            max-width: 100%;
+            margin: 18px auto;
+            /* يوسّط العنصر أفقياً */
+            padding: clamp(10px, 2.6vw, 18px) clamp(12px, 4vw, 28px);
+            border: 4px solid rgba(0, 0, 0, 0.9);
+            /* بوردر واضح لكن ليس سميك جداً على الموبايل */
+            border-radius: 38px;
+            background: rgb(255, 255, 255);
+            /* خلفية فاتحة للقراءة فوق أي صورة */
+            text-align: center;
+            font-family: 'Arial', Tahoma, sans-serif;
+            font-size: clamp(1.1rem, 2.7vw, 1.5rem);
+            /* خط يتكيف مع حجم الشاشة */
+            line-height: 1.25;
+            color: #111;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+            box-sizing: border-box;
+            margin-top: 36px;
+        }
+
+        /* تحسينات خاصة بالشاشات الصغيرة */
+        @media (max-width: 420px) {
+            .art {
+                width: calc(100% - 28px);
+                /* تترك حواف صغيرة على الجانبين */
+                margin: 12px auto;
+                padding: 10px 12px;
+                border-width: 3px;
+                border-radius: 14px;
+                font-size: 1rem;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+            }
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+
+        .card {
+            width: 325px;
+            background-image: url('');
+            background-color: #da0000b4;
+            border-radius: 9px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-content h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .card-content p {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .card-content .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #667eea;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 16px;
+            color: #fff;
+            transition: background 0.3s ease;
+        }
+
+        .card-content .btn:hover {
+            background-color: #764ba2;
+        }
+
+        /* تجاوب الموبايل */
+        @media (max-width: 720px) {
+            .sidebar.open {
+                width: 200px;
+            }
+
+            .sidebar a {
+                font-size: 0.98rem;
+                padding: 12px 16px;
+            }
+
+            .hamburger {
+                font-size: 24px;
+                padding: 9px 12px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+ 
+        @media (max-width: 420px) {
+            .sidebar.open {
+                width: 170px;
+            }
+
+            .sidebar a {
+                font-size: 0.92rem;
+                padding: 11px 14px;
+            }
+
+            .hamburger {
+                font-size: 22px;
+                padding: 8px 10px;
+            }
+
+            .sidebar .closebtn {
+                font-size: 24px;
+                width: 34px;
+                height: 34px;
+            }
+
+            .card {
+                width: 95%;
+                margin: 15px auto;
+            }
+        }
 .CV {
   background: linear-gradient(to right, #8d1928, #b41f30);
   color: #fff;
@@ -719,9 +1201,9 @@ container
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.45);
 }
-
+img-img
 /* ===================== CONTACT SECTION ===================== */
-.contactcontainer {
+.contactcontainer  {
   max-width: 1200px;
   margin: 30px auto;
   padding: 30px 20px;
@@ -1061,6 +1543,9 @@ ul li a .bbbbb{
     .name{
        font-size: 25px;}
        .title{
+          font-size: 19px;
+       } 
+         .title-1{
           font-size: 19px;
        } 
        .rkk{
